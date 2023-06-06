@@ -11,14 +11,14 @@
     </div>
     <div class="p-2">
       <form @submit.prevent>
-        <div class="form-row" style="max-width:100000px">
+        <div class="form-row" style="max-width:10000px">
 
           <div class ="form-group col-md-3" >   
             
-            <label for="a" style="float:left;">Car Brand : </label>
+            <label for="a" style="float:center;">Car Brand = </label>
             <select
               v-model.trim="winedata.a"
-              class="from control" style="float:left;"
+              class="from control" style="float:center;"
               id="car_name"
             >
                 <option value="0"  selected>Audi </option>
@@ -40,15 +40,15 @@
                 <option value="16" selected>Volkswagen</option>
             </select>
             <pre>
-
             </pre>
+
           </div>
           <div class="form-group col-md-3">
-            <label for="a">Model  Name   =    </label>
+            <label   class="col-12 px-0" for="b" style="float:center;" >Model Name = </label>
             <select
-              v-model.trim="winedata.b"
+              v-model.trim="winedata.b"  style="float:center;"
               class="from control"
-              id="model_name">
+              id="d">
             >  
             <option value = "0" selected>	 A-Star   	</option>
             <option value = "1" selected>	 A4       	</option>
@@ -216,22 +216,21 @@
             <option value = "163" selected>	 i10     	</option>
             <option value = "164" selected>	 i20     	</option>
             <option value = "165" selected>	 redi-GO 	</option>
-
-
-            
             </select>
+
+            <pre>
+            </pre>
           </div>
           
           <div class="form-group col-md-3">
-            <label class="col-12 px-0" for="c" style="float:left;">Kms Driven    =  </label>
+            <label class="col-12 px-0" for="c" >Kms Driven    =  </label>
             <input
-              class="form-control" style="float:left;"
+              class="form-control" 
               v-model.trim="winedata.c"
               type="number"
               id="c"
             />
             <pre>
-              
             </pre>
           </div>
           <div class="form-group col-md-3">
@@ -243,14 +242,13 @@
               id="d"
             />
             <pre>
-              
             </pre>
           </div>
           <div class="form-group col-md-3">
-            <label class="col-12 px-0" for="e" style="float:left;">Fuel Type   =   </label>
+            <label class="col-12 px-0" for="e" style="float:center;">Fuel Type   =   </label>
             
             <select
-              v-model.trim="winedata.e" style="float:left;"
+              v-model.trim="winedata.e" style="float:center;"
               class="from control"
               id="d"
              >
@@ -259,7 +257,6 @@
 
             </select>
             <pre>
-              
             </pre>
             
           </div>
@@ -275,13 +272,12 @@
 
             </select>
             <pre>
-              
             </pre>
           </div>
           <div class="form-group col-md-4">
-            <label class="col-12 px-0" for="g" style="float:left;" >Owner   =   </label>
+            <label class="col-12 px-0" for="g" style="float:center;" >Owner   =   </label>
             <select
-              v-model.trim="winedata.g" style="float:left;"
+              v-model.trim="winedata.g" style="float:center;"
               class="from control"
               id="d"
              >
@@ -293,7 +289,6 @@
 
             </select>
             <pre>
-              
             </pre>
           
             
