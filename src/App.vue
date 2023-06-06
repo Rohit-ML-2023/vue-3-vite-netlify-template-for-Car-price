@@ -8,8 +8,9 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
   <!-- <template> -->
-    <p>Choose what part of this page you want to see:</p>
-    <button @click="activeComp = 'About'">About</button>
+    <!-- <p>Choose what part of this page you want to see:</p> -->
+    <button @click="activeComp = 'About'">About</button> |  
+    
     <button @click="activeComp = 'Prediction'">Prediction</button><br>
     <div>
       <component :is="activeComp"></component>
