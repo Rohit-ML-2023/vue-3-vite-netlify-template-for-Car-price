@@ -9,18 +9,18 @@
   <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
   <!-- <template> -->
     <p>Choose what part of this page you want to see:</p>
-    <button @click="activeComp = 'animal-collection'">Animals</button>
-    <button @click="activeComp = 'food-items'">Food</button><br>
+    <button @click="activeComp = 'About'">About</button>
+    <button @click="activeComp = 'Prediction'">Prediction</button><br>
     <div>
       <component :is="activeComp"></component>
      </div>
 
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/Prediction"> Prediction </router-link>
   </nav>
-  <router-view/>
+  <router-view/> -->
 <!-- </template> -->
 </template>
 

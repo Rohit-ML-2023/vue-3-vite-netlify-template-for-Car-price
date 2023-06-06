@@ -9,12 +9,12 @@
 import { createApp } from 'vue'
 
 import App from './App.vue'
-import FoodItems from './views/AboutView.vue'
+import Prediction from './views/AboutView.vue'
 // ../views/AboutView.vue'
-import AnimalCollection from './views/HomeView.vue'
+import About from './views/HomeView.vue'
 
 const app = createApp(App)
-app.component('food-items', FoodItems);
-app.component('animal-collection', AnimalCollection);
+app.component('About',  About);
+app.component('Prediction', Prediction);
 
 app.mount('#app')
